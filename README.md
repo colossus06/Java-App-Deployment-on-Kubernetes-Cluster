@@ -1,19 +1,53 @@
 # Java-App-Deployment-on-Kubernetes-Cluster
 Java App Deployment on Kubernetes Cluster
 
+![image](https://user-images.githubusercontent.com/96833570/223191176-9e92e255-5343-418f-a7bc-c8f6d5e34602.png)
 
 
-## DB
+### Creating the Cluster
 
-![image](https://user-images.githubusercontent.com/96833570/222981807-1a72f8b2-d009-40e6-8641-a7b5f0bc45f1.png)
+```
+  export KOPS_STATE_STORE="s3://kops-bucket-rrrandom"
+  export MASTER_SIZE="t3.medium"
+  export NODE_SIZE="t3.small"
+  export ZONES="us-east-1a"
+  kops create cluster k8s.devtechops.dev\
+  --node-count 2 \
+  --zones $ZONES \
+  --node-size $NODE_SIZE \
+  --master-size $MASTER_SIZE \
+  --master-zones $ZONES \
+  --yes
+ ```
+
+```
+kops update cluster --name k8s.devtechops.dev --yes
+kops validate cluster --name  k8s.devtechops.dev --state=s3://kops-bucket-rrrandom
+
+aws ec2 create-volume \
+    --volume-type gp2 \
+    --size 3 \
+    --availability-zone us-east-1a
+```
 
 
-![image](https://user-images.githubusercontent.com/96833570/222981795-343ac19d-1ff4-4d4c-beaa-0fd334d818ca.png)
+```
+kubectl get nodes --show-labels
+kubectl get nodes
+kubectl describe node ip<>
+kubectl label nodes ip<> zone=us-east-1a
+
+kubectl create -f secret.yaml
+kubectl get secret
+kubectl describe secret
 
 
-![image](https://user-images.githubusercontent.com/96833570/222981778-8972579c-f85e-4961-bccb-5ff524231838.png)
+ kubectl create -f dbdep.yaml
+ kubectl create -f .
+ 
+ ```
 
-![image](https://user-images.githubusercontent.com/96833570/222981817-8b1ac97d-e7a4-453a-8b4e-f7d8dc9c33ed.png)
+
 
 
 
