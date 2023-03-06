@@ -15,8 +15,19 @@ Java App Deployment on Kubernetes Cluster
 
 ![image](https://user-images.githubusercontent.com/96833570/222981817-8b1ac97d-e7a4-453a-8b4e-f7d8dc9c33ed.png)
 
-![image](https://user-images.githubusercontent.com/96833570/222981832-4dd9b00a-aa9a-4806-8a8e-1e9bf42de42e.png)
 
-![image](https://user-images.githubusercontent.com/96833570/222981850-6c18b12e-3055-42ca-b97b-26d48d6187f0.png)
 
-![image](https://user-images.githubusercontent.com/96833570/222981857-909b9525-3def-4bab-9b6c-26eac558bec6.png)
+
+![image](https://user-images.githubusercontent.com/96833570/223102623-367e9989-d5a9-4a18-8df8-aac9f1210e18.png)
+
+
+![image](https://user-images.githubusercontent.com/96833570/223103589-e8697e83-31e3-430e-9a56-707c1de3a357.png)
+
+![image](https://user-images.githubusercontent.com/96833570/223103697-7dbc23c7-e69a-49b1-b13e-ca44d62b1b96.png)
+
+
+## Validation
+
+
+https://user-images.githubusercontent.com/96833570/223153579-8c03c26e-b2c9-42a5-ab66-17b8a59ca592.mp4
+
